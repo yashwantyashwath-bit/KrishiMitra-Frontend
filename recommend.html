@@ -1,0 +1,81 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farming Suggestion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <span class="logo-icon">🌾</span>
+        <span class="logo-text">KrishiMitra</span>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h2>Farming Suggestion (Auto GPS)</h2>
+    <p>Primary & secondary livelihood recommendations</p>
+
+    <!-- IMPORTANT -->
+    <button class="btn-primary" onclick="getFarmingSuggestion()">
+        Get Farming Suggestion
+    </button>
+</section>
+<!-- Placeholder Content (Before Recommendation) -->
+<section id="placeholder" class="info-grid">
+
+    <div class="card">
+        <h3>🌱 Why Smart Farming?</h3>
+        <p>
+            Smart farming helps farmers choose the right crops based on
+            soil, weather, and location to improve yield and income.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🌾 Soil Health Tips</h3>
+        <ul>
+            <li>Use organic manure and compost</li>
+            <li>Maintain soil pH between 6.0 – 7.5</li>
+            <li>Practice crop rotation</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>☀️ Seasonal Crop Planning</h3>
+        <ul>
+            <li>Kharif: Rice, Cotton, Maize</li>
+            <li>Rabi: Wheat, Mustard, Chickpea</li>
+            <li>Zaid: Vegetables, Watermelon</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>💰 Government Support</h3>
+        <ul>
+            <li>Kisan Credit Card</li>
+            <li>PM Fasal Bima Yojana</li>
+            <li>Organic Farming Subsidies</li>
+        </ul>
+    </div>
+
+</section>
+
+<section id="output" class="result-grid"></section>
+
+<div id="backBtn" style="display:none; text-align:center; margin:40px 0;">
+    <a href="main.html" class="btn-primary">
+        ⬅ Back to Home
+    </a>
+</div>
+
+
+<!-- IMPORTANT: JS FILE -->
+<script src="js/recommend.js"></script>
+</body>
+</html>

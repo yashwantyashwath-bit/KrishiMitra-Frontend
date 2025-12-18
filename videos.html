@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Organic Farming Videos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <span class="logo-icon">🌾</span>
+        <span class="logo-text">KrishiMitra</span>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h2>🎥 Organic Farming Tutorials</h2>
+    <p>Select language to watch organic farming videos</p>
+
+    <select id="languageSelect" onchange="loadVideos()">
+        <option value="">-- Select Language --</option>
+        <option value="kannada">Kannada</option>
+        <option value="telugu">Telugu</option>
+        <option value="hindi">Hindi</option>
+        <option value="english">English</option>
+    </select>
+</section>
+
+<section id="videoContainer" class="result-grid"></section>
+
+<script src="js/videos.js"></script>
+</body>
+</html>

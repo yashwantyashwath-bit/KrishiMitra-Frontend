@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disease Detection</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <span class="logo-icon">🌾</span>
+        <span class="logo-text">KrishiMitra</span>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h2>🦠 Crop Disease Detection</h2>
+    <p>Upload or capture plant image to get organic treatment</p>
+</section>
+
+<section class="form-section">
+
+    <!-- UPLOAD -->
+    <label>📁 Upload Image</label>
+    <input type="file" id="imageUpload" accept="image/*">
+
+    <p style="text-align:left; margin:15px;">OR</p>
+
+    <!-- CAMERA -->
+    <button class="btn-primary" onclick="openCamera()">📷 Open Camera</button>
+
+    <video id="video" width="100%" autoplay style="display:none; margin-top:15px;"></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+
+    <button class="btn-primary" onclick="capturePhoto()" style="display:none;" id="captureBtn">
+        Capture Photo
+    </button>
+
+    <button class="btn-primary" onclick="analyzeDisease()" style="margin-top:20px;">
+        Analyze Disease
+    </button>
+
+</section>
+
+<section id="result" class="results-section"></section>
+
+<script src="js/disease.js"></script>
+</body>
+</html>

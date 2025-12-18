@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(
+        270deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet
+    );
+    background-size: 400% 400%;
+    animation: rainbow 10s ease infinite;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(90deg, #1f7a1f, #2e9c2e);
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.info-grid {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("../images/farm.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: #2e9c2e;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #237a23;
+}
+
+/* PAGE HEADER */
+.page-header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+/* RESULTS */
+.result-grid {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    display: grid;
+    gap: 25px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.logo-icon {
+    font-size: 28px;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card {
+    background: rgba(255,255,255,0.9);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #1f7a1f;
+}
+
+.card ul {
+    padding-left: 20px;
+}
