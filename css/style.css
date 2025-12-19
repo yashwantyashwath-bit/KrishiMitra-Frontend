@@ -8,13 +8,13 @@ body {
     min-height: 100vh;
     background: linear-gradient(
         270deg,
-        red,
-        orange,
-        yellow,
-        green,
-        cyan,
-        blue,
-        violet
+        
+    
+        
+        rgb(18, 149, 18),
+    
+        rgb(38, 234, 38)
+    
     );
     background-size: 400% 400%;
     animation: rainbow 10s ease infinite;
@@ -29,12 +29,12 @@ body {
 
 /* NAVBAR */
 .navbar {
-    background: linear-gradient(90deg, #1f7a1f, #2e9c2e);
+    background: linear-gradient(90deg, #9cdf9c, #aadbaa);
     padding: 14px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: rgb(60, 207, 47);
 }
 .info-grid {
     max-width: 1000px;
@@ -60,7 +60,7 @@ body {
 .nav-links a {
     margin-left: 25px;
     text-decoration: none;
-    color: white;
+    color: rgb(43, 212, 21);
     font-weight: 500;
 }
 
