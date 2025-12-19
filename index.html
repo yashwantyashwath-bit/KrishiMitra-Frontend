@@ -54,6 +54,27 @@
             and government Support for Farming</p>
            <script src="/KrishiMitra-Frontend/js/script.js"></script>
 
+<!-- CHATBOT ICON -->
+<div id="chatbot-icon" onclick="toggleChat()">💬</div>
+
+<!-- CHATBOT BOX -->
+<div id="chatbot">
+    <div class="chat-header">
+        🌾 KrishiMitra Bot
+        <span onclick="toggleChat()">✖</span>
+    </div>
+
+    <div id="chat-body">
+        <div class="bot">Hello 👋 I am KrishiMitra Bot. Ask me about farming!</div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask about crops, disease, loans..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="js/chatbot.js"></script>
 
 			</body>
 			</html>

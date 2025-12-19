@@ -49,5 +49,25 @@
 <section id="result" class="results-section"></section>
 
 <script src="js/disease.js"></script>
+<!-- CHATBOT ICON -->
+<div id="chatbot-icon" onclick="toggleChat()">💬</div>
+
+<!-- CHATBOT WINDOW -->
+<div id="chatbot">
+    <div class="chat-header">
+        🌾 KrishiMitra Bot
+        <span onclick="toggleChat()">✖</span>
+    </div>
+
+    <div id="chat-body"></div>
+
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask about farming..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="js/chatbot.js"></script>
+
 </body>
 </html>
