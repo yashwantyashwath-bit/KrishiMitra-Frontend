@@ -1,36 +1,29 @@
 function getSuggestion() {
   const resultDiv = document.getElementById("result");
 
-  if (!resultDiv) {
-    alert("Result div not found!");
-    return;
-  }
-
+  // simulate GPS based suggestion
   const primary = [
-    "Rice Farming",
-    "Cotton Cultivation",
-    "Maize Farming",
-    "Groundnut Farming",
-    "Sugarcane Farming"
+    "Rice farming",
+    "Cotton cultivation",
+    "Maize farming",
+    "Paddy farming",
+    "Groundnut farming"
   ];
 
   const secondary = [
-    "Dairy Farming",
-    "Goat Rearing",
-    "Poultry Farming",
-    "Fish Farming",
+    "Dairy farming",
+    "Goat rearing",
+    "Poultry farming",
+    "Fish farming",
     "Beekeeping"
   ];
 
-  const primaryChoice =
-    primary[Math.floor(Math.random() * primary.length)];
-
-  const secondaryChoice =
-    secondary[Math.floor(Math.random() * secondary.length)];
+  const p = primary[Math.floor(Math.random() * primary.length)];
+  const s = secondary[Math.floor(Math.random() * secondary.length)];
 
   resultDiv.innerHTML = `
-    <h3>🌾 Recommendation Result</h3>
-    <p><strong>Primary:</strong> ${primaryChoice}</p>
-    <p><strong>Secondary:</strong> ${secondaryChoice}</p>
+    <h3>🌾 Farming Recommendation</h3>
+    <p><b>Primary:</b> ${p}</p>
+    <p><b>Secondary:</b> ${s}</p>
   `;
 }
